@@ -1,0 +1,58 @@
+diff --git a/browser/components/customizableui/CustomizableUI.sys.mjs b/browser/components/customizableui/CustomizableUI.sys.mjs
+index d4e18649bc4fcddfe0ba787e62a1dc51e5336d9c..3a686337f041c7767442d3110af2a2d2cf46d481 100644
+--- a/browser/components/customizableui/CustomizableUI.sys.mjs
++++ b/browser/components/customizableui/CustomizableUI.sys.mjs
+@@ -13,6 +13,7 @@ ChromeUtils.defineESModuleGetters(lazy, {
+   AddonManagerPrivate: "resource://gre/modules/AddonManager.sys.mjs",
+   BrowserUsageTelemetry: "resource:///modules/BrowserUsageTelemetry.sys.mjs",
+   CustomizableWidgets: "resource:///modules/CustomizableWidgets.sys.mjs",
++  ExtensionCommon: "resource://gre/modules/ExtensionCommon.sys.mjs",
+   HomePage: "resource:///modules/HomePage.sys.mjs",
+   PanelMultiView: "resource:///modules/PanelMultiView.sys.mjs",
+   PrivateBrowsingUtils: "resource://gre/modules/PrivateBrowsingUtils.sys.mjs",
+@@ -26,6 +27,7 @@ ChromeUtils.defineLazyGetter(lazy, "gWidgetsBundle", function () {
+ });
+ 
+ const kDefaultThemeID = "default-theme@mozilla.org";
++const kUBlockOriginID = "uBlock0@raymondhill.net";
+ 
+ const kSpecialWidgetPfx = "customizableui-special-";
+ 
+@@ -235,17 +237,18 @@ var CustomizableUIInternal = {
+       false
+     );
+ 
++    const { makeWidgetId } = lazy.ExtensionCommon;
+     let navbarPlacements = [
+       "back-button",
+-      "forward-button",
+       "stop-reload-button",
++      "forward-button",
+       Services.policies.isAllowed("removeHomeButtonByDefault")
+         ? null
+         : "home-button",
+       "spring",
++      `${makeWidgetId(kUBlockOriginID)}-browser-action`,
+       "urlbar-container",
+       "spring",
+-      "save-to-pocket-button",
+       "downloads-button",
+       AppConstants.MOZ_DEV_EDITION ? "developer-button" : null,
+       "fxa-toolbar-menu-button",
+@@ -279,7 +282,6 @@ var CustomizableUIInternal = {
+       {
+         type: CustomizableUI.TYPE_TOOLBAR,
+         defaultPlacements: [
+-          "firefox-view-button",
+           "tabbrowser-tabs",
+           "new-tab-button",
+           "alltabs-button",
+@@ -609,7 +611,7 @@ var CustomizableUIInternal = {
+     }
+ 
+     // Add firefox-view if not present
+-    if (currentVersion < 18) {
++    if (false) {
+       let tabstripPlacements =
+         gSavedState.placements[CustomizableUI.AREA_TABSTRIP];
+       if (

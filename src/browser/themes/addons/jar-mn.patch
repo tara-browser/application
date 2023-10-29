@@ -1,0 +1,19 @@
+diff --git a/browser/themes/addons/jar.mn b/browser/themes/addons/jar.mn
+index 69bb3000d6d2d249d1d77262dc2a0057d0318308..68fc1df73672c271990b6d2eca489093569ec0fb 100644
+--- a/browser/themes/addons/jar.mn
++++ b/browser/themes/addons/jar.mn
+@@ -16,6 +16,14 @@ browser.jar:
+   content/builtin-themes/light                     (light/*.css)
+   content/builtin-themes/light/manifest.json       (light/manifest.json)
+ 
++  content/builtin-themes/pulse/dark                      (pulse/dark/*.svg)
++  content/builtin-themes/pulse/dark/experiment.css       (pulse/dark/experiment.css)
++  content/builtin-themes/pulse/dark/manifest.json        (pulse/dark/manifest.json)
++
++  content/builtin-themes/pulse/light                     (pulse/light/*.svg)
++  content/builtin-themes/pulse/light/experiment.css      (pulse/light/experiment.css)
++  content/builtin-themes/pulse/light/manifest.json       (pulse/light/manifest.json)
++
+   content/builtin-themes/colorways/2021lush/soft                          (colorways/2021-life-in-color/lush/soft/*.svg)
+   content/builtin-themes/colorways/2021lush/soft/manifest.json            (colorways/2021-life-in-color/lush/soft/manifest.json)
+   content/builtin-themes/colorways/2021lush/balanced                      (colorways/2021-life-in-color/lush/balanced/*.svg)

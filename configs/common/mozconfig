@@ -1,0 +1,34 @@
+ac_add_options --with-app-name=${binName}
+export MOZ_USER_DIR="${name}"
+export MOZ_APP_VENDOR="${vendor}"
+export MOZ_APP_BASENAME=${binName}
+export MOZ_APP_PROFILE=${binName}
+export MOZ_APP_DISPLAYNAME="${name}"
+export MOZ_MACBUNDLE_ID=${appId}
+export MOZ_DISTRIBUTION_ID=${appId}
+
+# Uncomment if builds are too resource hungry
+# mk_add_options MOZ_MAKE_FLAGS="-j4"
+# ac_add_options --enable-linker=gold
+ac_add_options --with-app-basename="Tara Browser"
+ac_add_options --with-app-name=${binName}
+export MOZ_USER_DIR="Tara Browser"
+export MOZ_APP_VENDOR="Tara Browser"
+export MOZ_APP_BASENAME=TaraBrowser
+export MOZ_APP_PROFILE=${binName}
+export MOZ_APP_DISPLAYNAME="Tara Browser"
+export MOZ_MACBUNDLE_ID=com.arcoirislabs.application.browser.tara
+export MOZ_DISTRIBUTION_ID=com.arcoirislabs.application.browser.tara
+export MOZ_MACBUNDLE_NAME="Tara Browser.app"
+export MOZ_APP_REMOTINGNAME=com.arcoirislabs.application.browser.tara
+# Bootstrap
+ac_add_options --enable-bootstrap
+
+export MOZ_INCLUDE_SOURCE_INFO=1
+export MOZ_REQUIRE_SIGNING=
+export MOZ_SOURCE_REPO=https://github.com/pulse-browser/browser
+export MOZ_SOURCE_CHANGESET=${changeset}
+
+# Enable these to enable mozilla telemetry and tracking. By default, mozilla will not build telemetry code.
+# MOZ_TELEMETRY_REPORTING=1
+# MOZ_DATA_REPORTING=1

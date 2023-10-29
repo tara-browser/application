@@ -1,0 +1,103 @@
+{
+  "name": "Tara Browser",
+  "vendor": "Arcoiris Labs",
+  "appId": "com.arcoirislabs.application.browser.tara",
+  "binaryName": "tarabrowser",
+  "version": {
+    "product": "firefox",
+    "version": "119.0"
+  },
+  "buildOptions": {
+    "windowsUseSymbolicLinks": false,
+    "generateBranding": true
+  },
+  "addons": {
+    "ublock": {
+      "platform": "github",
+      "id": "uBlock0@raymondhill.net",
+      "repo": "gorhill/uBlock",
+      "version": "1.52.2",
+      "fileGlob": "uBlock0_*.firefox(.signed)?.xpi"
+    },
+    "tabliss": {
+      "platform": "amo",
+      "id": "extension@tabliss.io",
+      "amoId": "850407",
+      "version": "2.6.0"
+    },
+    "firefox-qr-generator": {
+      "id": "qr-generator@browser.fushra.com",
+      "platform": "github",
+      "repo": "pulse-browser/firefox-qr-generator",
+      "version": "v0.1.0",
+      "fileGlob": "release.zip"
+    },
+    "sidebar-tabs": {
+      "id": "sidebartabs@browser.fushra.com",
+      "platform": "github",
+      "repo": "pulse-browser/sidebar-tabs",
+      "version": "v0.4.0",
+      "fileGlob": "release.zip"
+    }
+  },
+  "brands": {
+    "stable": {
+      "backgroundColor": "#2B2A33",
+      "brandShorterName": "Tara",
+      "brandShortName": "Tara Browser",
+      "brandFullName": "Tara Browser",
+      "release": {
+        "displayVersion": "1.0.0",
+        "github": {
+          "repo": "pulse-browser/browser"
+        },
+        "x86": {
+          "windowsMar": "windows.mar",
+          "macosMar": "macosIntel.mar",
+          "linuxMar": "linux.mar"
+        }
+      }
+    },
+    "beta": {
+      "backgroundColor": "#2B2A33",
+      "brandShorterName": "Tara",
+      "brandShortName": "Tara Browser",
+      "brandFullName": "Tara Browser Beta",
+      "release": {
+        "displayVersion": "1.0.0-b.0",
+        "github": {
+          "repo": "pulse-browser/browser"
+        },
+        "x86": {
+          "windowsMar": "windows.mar",
+          "macosMar": "macosIntel.mar",
+          "linuxMar": "linux.mar"
+        }
+      }
+    },
+    "alpha": {
+      "backgroundColor": "#2B2A33",
+      "brandShorterName": "Tara",
+      "brandShortName": "Tara Browser",
+      "brandFullName": "Tara Browser Alpha",
+      "release": {
+        "displayVersion": "1.0.0-a.84",
+        "github": {
+          "repo": "pulse-browser/browser"
+        },
+        "x86": {
+          "windowsMar": "windows.mar",
+          "macosMar": "macosIntel.mar",
+          "linuxMar": "linux.mar"
+        }
+      }
+    }
+  },
+  "license": {
+    "ignoredFiles": [
+      ".*\\.json"
+    ],
+    "licenseType": "MPL-2.0"
+  },
+  "updateHostname": "updates.pulsebrowser.app"
+}

@@ -116,7 +116,7 @@ index f5def93f56fc8d02d6ae6834ca8d2df0aead2379..b607ca233ed7219bff900a98fd1e7309
 +
 +    let sidebarVisible = false;
 +    if (window.toolbar.visible) {
-+      sidebarVisible = Services.prefs.getBoolPref(this.SIDEBAR_TABS_PREF, true);
++      sidebarVisible = Services.prefs.getBoolPref(this.SIDEBAR_TABS_PREF, false);
 +    }
 +
 +    this.setSidebarVisibility(sidebarVisible);

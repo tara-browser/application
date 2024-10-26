@@ -5,7 +5,7 @@
   "binaryName": "tarabrowser",
   "version": {
     "product": "firefox",
-    "version": "119.0"
+    "version": "119.0.1"
   },
   "buildOptions": {
     "windowsUseSymbolicLinks": false,
@@ -19,12 +19,7 @@
       "version": "1.52.2",
       "fileGlob": "uBlock0_*.firefox(.signed)?.xpi"
     },
-    "tabliss": {
-      "platform": "amo",
-      "id": "extension@tabliss.io",
-      "amoId": "850407",
-      "version": "2.6.0"
-    },
+    
     "firefox-qr-generator": {
       "id": "qr-generator@browser.fushra.com",
       "platform": "github",
@@ -49,7 +44,7 @@
       "release": {
         "displayVersion": "1.0.0",
         "github": {
-          "repo": "pulse-browser/browser"
+          "repo": "tara-browser/application"
         },
         "x86": {
           "windowsMar": "windows.mar",
@@ -66,7 +61,7 @@
       "release": {
         "displayVersion": "1.0.0-b.0",
         "github": {
-          "repo": "pulse-browser/browser"
+          "repo": "tara-browser/application"
         },
         "x86": {
           "windowsMar": "windows.mar",
@@ -83,7 +78,7 @@
       "release": {
         "displayVersion": "1.0.0-a.84",
         "github": {
-          "repo": "pulse-browser/browser"
+          "repo": "tara-browser/application"
         },
         "x86": {
           "windowsMar": "windows.mar",

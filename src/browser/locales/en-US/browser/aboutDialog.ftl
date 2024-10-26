@@ -29,7 +29,7 @@ update-manual = Updates available at <label data-l10n-name="manual-link"/>
 
 update-unsupported = You can not perform further updates on this system. <label data-l10n-name="unsupported-link">Learn more</label>
 
-update-restarting = Restarting…
+update-restarting = Restarting { -brand-short-name }…
 
 update-internal-error = Unable to check for updates due to internal error. Updates available at <label data-l10n-name="manual-link"/>
 
@@ -70,7 +70,7 @@ aboutDialog-title =
 about-dialog-version = Version: 
 about-dialog-channel = Channel: 
 
-about-dialog-project-description = { -brand-short-name } is developed by { -vendor-short-name }, a small community of developers (read two). Our goal is to build a browser that works well for us, and we encorage you to contribute your ideas as well!
+about-dialog-project-description = { -brand-short-name } is developed by { -vendor-short-name } as a gift from India to the World . Our goal is to build a browser that aims to be secure, minimal & fast across all the platforms. 
 
 about-dialog-license = License
 about-dialog-privacy-policy = Privacy Policy

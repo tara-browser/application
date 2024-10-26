@@ -24,7 +24,7 @@ welcome-dialog-feature-sidebar-tabs = Sidebar Tabs
 welcome-dialog-features-action = Finish
 
 # About Welcome Page
-welcome-page-description = An experimental Firefox fork that enhances focus and increases work productivity due to its hyper minimalistic UI and built-in tools
+welcome-page-description = { -brand-full-name } is experimental Firefox fork that made for India that will help you focus on work with minimalistic UI 
 welcome-page-version = You are using { -brand-full-name }
 welcome-page-build-id = Build { -build-id }
 welcome-page-other-downloads = If this is not the release you want, feel free to checkout other downloads at https://pulsebrowser.app/download

@@ -29,7 +29,7 @@ pref("app.update.badgeWaitTime", 0);
 pref("devtools.selfxss.count", 5);
 
 // Betterfox overrides:
-pref('identity.fxaccounts.enabled', true); // Enable firefox sync
+pref('identity.fxaccounts.enabled', false); // Enable firefox sync
 
 // Enable importers for other browsers
 pref('browser.migrate.vivaldi.enabled', true);
@@ -74,14 +74,14 @@ pref('svg.context-properties.content.enabled', true);
 // store
 pref('xpinstall.signatures.required', false);
 // Allow the usage of theme experiments
-pref('extensions.experiments.enabled', true);
+pref('extensions.experiments.enabled', false);
 
 // Disable VPN promos
 pref('browser.vpn_promo.enabled', false);
 
 // Enable WebMIDI. This is still currently in testing inside of Firefox, but
 // will also provide us with the benefit of more features
-pref('dom.webmidi.enabled', true);
+pref('dom.webmidi.enabled', false);
 
 // Our versioning system is incomprehensible to Mozilla's servers. To fix a bunch
 // of addon bugs, we need to update these prefs

@@ -7,3 +7,5 @@ engine/
 firefox-*/
 node_modules/
 dist/
+gluon.json
+package.json

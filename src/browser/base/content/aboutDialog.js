@@ -14,7 +14,7 @@ function init(event) {
     'Unknown'
   )
 
-  console.log(AppConstants.MOZ_APP_VERSION_DISPLAY)
+  //console.log(AppConstants.MOZ_APP_VERSION_DISPLAY)
   console.log(Services.prefs.getCharPref('app.update.channel', 'Unknown'))
 }
 
